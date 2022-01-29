@@ -104,44 +104,73 @@
 
 // login page
 
-import React from 'react';
-import './login.css'
+// import React from 'react';
+// import './login.css'
 
-const Login = () => {
+// const Login = () => {
+//   return (<>
+//       <body>
+//           <div className="container">
+//               <div className="header">
+//                   <h1 className="title">Login</h1>
+//               </div>
+//               <form action="
+//               ">
+//                   <div className="id">
+//                  <h3> <label htmlFor="user-id">UserId</label></h3>
+//                  <i class="far fa-user"><input type="text" autoComplete='off' id='user-id' placeholder='Enter userId'/></i>  
+//                   </div>
+//                   <div className="id">
+//                  <h3> <label htmlFor="pass">Password</label></h3>
+//                  <i class="fas fa-unlock"> <input type="password" autoComplete='off' id='pass' /></i> 
+//                   </div>
+//                   <a href="">Forgot password?</a>
+//                   <div className="captcha">
+//                   <div class="g-recaptcha" data-sitekey="6LeByEEeAAAAAM3tmyjk4PuD9QKHcyzrCfzhtCHx"></div>
+//                   </div>
+//                   <div className="submit">
+//                   <div className="login">
+//                       <input type="submit" value='Login' />
+//                   </div>
+//                   <div className="Sign Up">
+//                       <input type="submit" value='Sign Up' />
+//                   </div>
+//                   </div>
+
+//               </form>
+//           </div>
+//       </body>
+//   </>);
+// };
+
+// export default Login;
+
+
+// password recovery
+
+import React from 'react';
+import './recovery.css'
+const Passrecovery = () => {
   return (<>
       <body>
           <div className="container">
-              <div className="header">
-                  <h1 className="title">Login</h1>
+              <div className="">
+                  <h1 className="title">Forgot Password</h1>
+                  <p>Your password has been sent to your registered mobile no +91 XXXXXXXXXX</p>
               </div>
               <form action="
               ">
-                  <div className="id">
-                 <h3> <label htmlFor="user-id">UserId</label></h3>
-                 <i class="far fa-user"><input type="text" autoComplete='off' id='user-id' placeholder='Enter userId'/></i>  
-                  </div>
-                  <div className="id">
-                 <h3> <label htmlFor="pass">Password</label></h3>
-                 <i class="fas fa-unlock"> <input type="password" autoComplete='off' id='pass' /></i> 
-                  </div>
-                  <a href="">Forgot password?</a>
-                  <div className="captcha">
-                  <div class="g-recaptcha" data-sitekey="6LeByEEeAAAAAM3tmyjk4PuD9QKHcyzrCfzhtCHx"></div>
+                  <div className="rid">
+                      <h3><label htmlFor="userid">Enter UserId</label></h3>
+                      <i class="far fa-user">  <input type="text" placeholder='Confirm Your UserId'/></i>
                   </div>
                   <div className="submit">
-                  <div className="login">
-                      <input type="submit" value='Login' />
+                          <input type="submit" value='Redirect to Login Page'/>
                   </div>
-                  <div className="Sign Up">
-                      <input type="submit" value='Sign Up' />
-                  </div>
-                  </div>
-
               </form>
           </div>
       </body>
   </>);
 };
 
-export default Login;
-
+export default Passrecovery;
