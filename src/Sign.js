@@ -148,24 +148,56 @@
 
 // password recovery
 
+// import React from 'react';
+// import './recovery.css'
+// const Passrecovery = () => {
+//   return (<>
+//       <body>
+//           <div className="container">
+//               <div className="">
+//                   <h1 className="title">Forgot Password</h1>
+//                   <p>Your password has been sent to your registered mobile no +91 XXXXXXXXXX</p>
+//               </div>
+//               <form action="
+//               ">
+//                   <div className="rid">
+//                       <h3><label htmlFor="userid">Enter UserId</label></h3>
+//                       <i class="far fa-user">  <input type="text" placeholder='Confirm Your UserId'/></i>
+//                   </div>
+//                   <div className="submit">
+//                           <input type="submit" value='Redirect to Login Page'/>
+//                   </div>
+//               </form>
+//           </div>
+//       </body>
+//   </>);
+// };
+
+// export default Passrecovery;
+
+
 import React from 'react';
-import './recovery.css'
-const Passrecovery = () => {
+import './otp.css'
+const Otp = () => {
   return (<>
       <body>
           <div className="container">
               <div className="">
-                  <h1 className="title">Forgot Password</h1>
-                  <p>Your password has been sent to your registered mobile no +91 XXXXXXXXXX</p>
+                  <h1 className="title">OTP Verification</h1>
+                  <p>Enter the OTP sent to +91 XXXXXXXXXX</p>
               </div>
               <form action="
               ">
                   <div className="rid">
-                      <h3><label htmlFor="userid">Enter UserId</label></h3>
-                      <i class="far fa-user">  <input type="text" placeholder='Confirm Your UserId'/></i>
+                      
+                <div>  <input type="text"  name="otp" maxlength="1"  pattern="\d{1}" required/></div>
+                <div>  <input type="text"  name="otp" maxlength="1"  pattern="\d{1}" required/></div>
+                <div>  <input type="text"  name="otp" maxlength="1"  pattern="\d{1}" required/></div>
+                <div> <input type="text"  name="otp" maxlength="1"  pattern="\d{1}" required/></div> 
                   </div>
                   <div className="submit">
                           <input type="submit" value='Redirect to Login Page'/>
+
                   </div>
               </form>
           </div>
@@ -173,4 +205,5 @@ const Passrecovery = () => {
   </>);
 };
 
-export default Passrecovery;
+export default Otp;
+
